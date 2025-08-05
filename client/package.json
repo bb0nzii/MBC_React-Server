@@ -20,7 +20,10 @@
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://bb0nzii.github.io/MBC_React-Server",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -43,5 +46,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
